@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# ✅Todo List Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ยินดีต้อนรับสู่ **Todo List** โปรเจกต์เว็บแอปพลิเคชันที่สร้างขึ้นเพื่อจัดการรายการสิ่งที่ต้องทำ (Todo) ช่วยจัดระเบียบชีวิตประจำวันของคุณได้ง่ายขึ้น!
 
-Currently, two official plugins are available:
+## 📌 คุณสมบัติที่สำคัญ
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **เพิ่มรายการงานที่ต้องทำ**: จัดการและบันทึกสิ่งที่คุณต้องการทำในแต่ละวัน
+- **ลบและแก้ไขรายการ**: จัดการแก้ไขหรือลบรายการที่คุณไม่ต้องการแล้ว
+- **แยกส่วนหน้าและส่วนหลังอย่างชัดเจน**: ช่วยให้ง่ายต่อการดูแลและปรับปรุง
 
-## Expanding the ESLint configuration
+## 🚀 วิธีการติดตั้ง
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### ส่วนของ Front-end:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. โคลนโปรเจกต์ส่วนหน้าไปยังเครื่องของคุณ:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+   ```bash
+   git clone https://github.com/Celimine09/simple-todolist-front.git 
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. ติดตั้ง dependencies:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+   ```bash
+   npm install
+   ```
+
+3. เรียกใช้งานโปรเจกต์:
+
+   ```bash
+   npm start
+   ```
+
+### ส่วนของ Back-end
+
+1. โคลนโปรเจกต์ไปยังเครื่องของคุณ:
+
+   ```bash
+   git clone https://github.com/Celimine09/simple-todolist.git 
+   ```
+
+2. ติดตั้ง dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. เรียกใช้งานโปรเจกต์:
+
+   ```bash
+   npm start
+   ```
+
+## 🛠️ เทคโนโลยีที่ใช้
+
+- **Node.js**
+- **Express.js**
+- **MongoDB**
+- **HTML & CSS**
+- **JavaScript**
+
+ขอบคุณที่สนใจในโปรเจกต์นี้!😊
+
